@@ -1,29 +1,19 @@
 {
-  "name": "custom-localtunnel-server",
-  "version": "1.0.0",
-  "description": "Custom LocalTunnel server with path-based routing instead of wildcard domains",
-  "main": "server.js",
+  "name": "localtunnel-server",
+  "version": "0.0.1",
+  "description": "server for localtunnel",
+  "main": "lib/Server.js",
+  "bin": {
+    "localtunnel-server": "./bin/server.js"
+  },
   "scripts": {
-    "start": "node server.js",
-    "dev": "node server.js"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "engines": {
-    "node": ">=12.0.0"
-  },
-  "keywords": [
-    "tunnel",
-    "localtunnel",
-    "proxy",
-    "ngrok",
-    "expose",
-    "localhost"
-  ],
-  "author": "Custom LocalTunnel",
+  "author": "",
   "license": "MIT",
-  "dependencies": {},
-  "repository": {
-    "type": "git",
-    "url": "your-repo-url"
-  },
-  "homepage": "your-homepage-url"
+  "dependencies": {
+    "http-proxy": "^1.18.1",
+    "tldjs": "^2.3.1",
+    "yargs": "^17.0.1"
+  }
 }
