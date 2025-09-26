@@ -4,7 +4,7 @@ const crypto = require('crypto');
 const { URL } = require('url');
 
 // Configuration
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || $PORT;
 const MAX_SOCKETS = process.env.MAX_SOCKETS || 10;
 
 // Store active tunnels and connections
